@@ -1,0 +1,55 @@
+<header class="content">
+    <h1>webTv</h1>
+    <nav>
+      <a href="" routerLink="/" routerLinkActive="active">Accueil</a>
+      <a href="login" routerLink="/login" routerLinkActive="active">Login</a>
+      <a href="logout" routerLink="/logout" routerLinkActive="active">Logout</a>
+      <a href="contact" routerLink="/contact" routerLinkActive="active"><button>Contact</button></a>
+    </nav>
+  </header>
+<body>
+  <div class="container">
+  <h1 class="title title-1">Contact</h1>
+
+
+  <form (ngSubmit)="onSubmit()" class="form">
+
+  <div class="form_group">
+    <input type="text" class="form_input" id="name" name="name" placeholder="Nom" [(ngModel)]="contactForm.name" required>
+    <label for="name" class="form_label">Nom</label>
+  </div>
+
+  <div class="form_group">
+    <input type="email" class="form_input" id="email" name="email" placeholder="exemple@email.fr" [(ngModel)]="contactForm.email" required>
+    <label for="email" class="form_label">Email</label>
+  </div>
+
+  <div class="form_message">
+    <label for="message" class="form_label">Message</label>
+    <textarea id="message"  name="" cols="30" rows="10"class="form_input message_input" [(ngModel)]="contactForm.message" required></textarea>
+  </div>
+
+  <div class="submit">
+    <button class="submitBtn">Envoyer &rarr;</button>
+    
+  </div>
+</form>
+  
+
+</div>
+</body>
+  
+
+
+  <footer>
+    <div class="footer">
+      </div>
+      <footer class="footer mt-auto">
+        <p>© 2024 WebTv</p>
+
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="contact.html">Nous contacter</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </footer>
+</footer>
